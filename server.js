@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 // ✅ Enable CORS for requests from localhost:8080 and allow Content-Type header
 app.use(cors({
-    origin: 'http://localhost:8080',
+    origin: ['http://localhost:8080', 'https://barter.cx'],
     methods: ['POST'],
     allowedHeaders: ['Content-Type']
 }));
