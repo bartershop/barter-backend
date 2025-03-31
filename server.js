@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 // === ROUTES ===
 // This pulls in our Brevo logic from routes/emailRoutes.js
-const emailRoutes = require('routes/emailRoutes');
+const emailRoutes = require('./routes/emailRoutes');
 app.use('/api', emailRoutes);
 
 // === SERVER START ===
