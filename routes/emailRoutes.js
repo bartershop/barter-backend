@@ -24,7 +24,7 @@ router.post('/subscribe', async (req, res) => {
   try {
     await brevoAPI.post('/contacts', {
       email,
-      listIds: [BREVO_LIST_ID],
+      listIds: [Number(BREVO_LIST_ID)],
       updateEnabled: true,
     });
 
